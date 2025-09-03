@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sakthi Dental Clinic offers specialized dental care for women, children, and families in Hosur. Book your appointment today!">
+    <meta name="keywords" content="dental clinic, Hosur, dental care, women, children, orthodontics, implants">
+    <meta name="author" content="Sakthi Dental Clinic">
+    <title>Sakthi Dental Clinic - Specialized Dental Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #3B82F6;
+            --primary-pink: #EC4899;
+            --lavender: #E5E7EB;
+            --pastel-white: #F9FAFB;
+            --accent-gray: #4B5563;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--pastel-white);
+            color: var(--accent-gray);
+            line-height: 1.6;
+        }
+        nav {
+            background-color: var(--pastel-white);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-logo {
+            height: 40px;
+            width: auto;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, var(--lavender) 0%, var(--primary-blue) 100%);
+            padding: 5rem 1rem;
+        }
+        .section-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .section-heading::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--primary-pink);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .card {
+            background: var(--pastel-white);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #2563EB;
+        }
+        .btn-secondary {
+            background-color: var(--primary-pink);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #DB2777;
+        }
+        footer {
+            background: linear-gradient(180deg, var(--primary-blue) 0%, #1E3A8A 100%);
+        }
+        .form-input {
+            border: 1px solid var(--lavender);
+            border-radius: 8px;
+            padding: 0.75rem;
+            width: 100%;
+            transition: border-color 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        @media (max-width: 768px) {
+            .section-heading {
+                font-size: 2rem;
+            }
+            .hero-section {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/150x40?text=SDC+Logo" alt="Sakthi Dental Clinic Logo" class="nav-logo mr-2">
+                <span class="text-2xl font-bold text-blue-600">Sakthi Dental Clinic</span>
+            </div>
+            <div class="space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="#treatments" class="text-gray-600 hover:text-blue-600">Treatments</a>
+                <a href="#faqs" class="text-gray-600 hover:text-blue-600">FAQs</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Specialized Dental Care for Women, Children & Families</h1>
+            <p class="text-lg text-gray-200 mb-8">Experience compassionate, expert-led dental services tailored to your needs—all in a modern and welcoming environment.</p>
+            <div class="space-x-4">
+                <button class="btn-primary">Fix an Appointment</button>
+                <button class="btn-secondary">Emergency Dental Support</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assurance Banner -->
+    <section class="bg-blue-100 py-6 text-center">
+        <p class="text-xl font-semibold text-gray-800">You are always in safe hands. We are ready to help, anytime.</p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Why Choose Sakthi Dental Clinic?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card text-center">
+                    <i class="fas fa-tooth text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">All-in-One Care</h3>
+                    <p>From general dentistry to specialized treatments, everything under one roof.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-user-md text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Experienced Doctors</h3>
+                    <p>Our dentists are professionally trained and committed to personalized patient care.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-heart text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Patient-Centric Approach</h3>
+                    <p>We prioritize comfort, safety, and transparency in every treatment we offer.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-microchip text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Technology-Driven Services</h3>
+                    <p>Modern tools and equipment ensure precision and safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Treatments -->
+    <section id="treatments" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Explore Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <i class="fas fa-tooth text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Tooth Extraction</h3>
+                    <p>Safe and painless removal of impacted or decayed teeth.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-teeth text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Artificial Complete Denture</h3>
+                    <p>Full mouth replacement to restore confidence and function.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-fill-drip text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Tooth Filling</h3>
+                    <p>Composite fillings for cavity treatment and tooth restoration.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-tooth text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Teeth Cleaning or Scaling</h3>
+                    <p>Preventive care to remove plaque and protect gums.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-smile text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Bleaching</h3>
+                    <p>Cosmetic whitening treatments for a brighter smile.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-tooth text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Orthodontic Treatment</h3>
+                    <p>Braces and aligners to straighten and align teeth.</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#treatments" class="btn-primary">View Full List of Treatments</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">What Our Patients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card">
+                    <p class="italic text-gray-600 mb-4">“The doctors are extremely kind and attentive. My braces treatment is progressing really well. 5/5.”</p>
+                    <p class="font-semibold text-blue-600">– Manisha M</p>
+                </div>
+                <div class="card">
+                    <p class="italic text-gray-600 mb-4">“I got my teeth cleaned and whitened here, and the results were amazing. The staff is so humble and professional.”</p>
+                    <p class="font-semibold text-blue-600">– Mr. Arun Kumar</p>
+                </div>
+                <div class="card">
+                    <p class="italic text-gray-600 mb-4">“Their attention to detail is outstanding. My daughter needed braces and the entire process has been so smooth.”</p>
+                    <p class="font-semibold text-blue-600">– Mrs. Revathi S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Highlights -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Clinic Facilities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-map-marker-alt text-2xl text-blue-600"></i>
+                    <p>Convenient central location</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-parking text-2xl text-blue-600"></i>
+                    <p>Hassle-free parking</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-clock text-2xl text-blue-600"></i>
+                    <p>Doctors available daily (9 AM – 9 PM)</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-shuttle-van text-2xl text-blue-600"></i>
+                    <p>Pickup & drop-off support</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-wheelchair text-2xl text-blue-600"></i>
+                    <p>Wheelchair access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Get to Know Dr. Anupriya</h2>
+            <p class="text-lg text-gray-600 mb-4">Bringing over 20 years of expertise, Dr. Anupriya stands as a leading figure in modern dentistry at Hosur. A proud alumna of the renowned Government Dental College, she began her professional journey after graduating in 2000. Her passion for delivering exceptional dental care was further nurtured during six impactful years at Mathura Clinic, where she refined her clinical skills and deepened her commitment to patient wellbeing.</p>
+            <p class="text-lg text-gray-600 mb-4">In 2004, Dr. Anupriya established Sakthi Dental Clinic in Hosur with a clear vision — to make high-quality dental care accessible to all. Her dedication extends beyond private practice, reflected in her long-standing service with the Primary Health Center at Chandara Hospital, where she has been a trusted dental consultant for over a decade.</p>
+            <h3 class="text-2xl font-semibold text-blue-800 mt-8 mb-4">Our Vision & Mission</h3>
+            <p class="text-lg text-gray-600 mb-4">At Sakthi Dental Clinic, our mission is to redefine oral healthcare by delivering personalized, compassionate, and advanced dental services. We are committed to creating a welcoming environment where patients feel comfortable and confident in taking charge of their dental health.</p>
+            <p class="text-lg text-gray-600 mb-4">Our vision is to be a leading force in modern dentistry, known for setting new standards in patient care, innovation, and community engagement.</p>
+            <h3 class="text-2xl font-semibold text-blue-800 mt-8 mb-4">Our Team of Doctors</h3>
+            <ul class="list-disc list-inside text-lg text-gray-600">
+                <li>Dr. Anupriya (Founder)</li>
+                <li>Dr. Ananya Iyer (Prosthodontist)</li>
+                <li>Dr. Meera Subramanian (Endodontist)</li>
+                <li>Dr. Arvind Kumar (Dental Surgeon)</li>
+                <li>Dr. Sneha N (Orthodontist)</li>
+                <li>Dr. Srinivas Rohit Ramanujam (Implantologist)</li>
+                <li>Dr. Balu (Laser Surgeon)</li>
+                <li>Dr. Vikram Raj Kishore (Aligners Partner)</li>
+                <li>Dr. Ajay Jumar (Oral & Maxillofacial Surgeon)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Full Treatments Page -->
+    <section id="treatments" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Our Treatments</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Teeth Cleaning & Scaling</h3>
+                    <p>We offer advanced, non-surgical gum care using modern LASER technology for precise and effective treatment.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Tooth Filling</h3>
+                    <p>We specialize in restoring smiles through expert tooth filling services using high-quality materials.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Tooth Extraction</h3>
+                    <p>Extractions are handled with utmost care to minimize discomfort, using gentle techniques.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Artificial Complete Denture</h3>
+                    <p>High-quality dentures designed for a natural look and comfortable fit.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Dental Implants</h3>
+                    <p>Modern, reliable solution for replacing missing teeth with biocompatible materials.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Laser Dentistry</h3>
+                    <p>Minimally invasive treatments using advanced laser technology for faster healing.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Root Canal Therapy</h3>
+                    <p>Relieves pain and preserves natural tooth structure by removing infected tissue.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Wisdom Tooth Extraction</h3>
+                    <p>Gentle removal of impacted wisdom teeth with comprehensive post-operative care.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Fixed Partial Denture (Bridge)</h3>
+                    <p>Custom-made bridges to restore appearance and chewing function.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Teeth Whitening (Bleaching)</h3>
+                    <p>Safe bleaching agents to lighten teeth and restore natural radiance.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Veneers</h3>
+                    <p>Custom-made shells to cover imperfections for a flawless smile.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Pediatric Dentistry</h3>
+                    <p>Gentle dental care for children in a welcoming environment.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Flap Surgery</h3>
+                    <p>Treatment for advanced gum disease to support gum health.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Orthodontic Braces</h3>
+                    <p>Customized braces to achieve improved alignment and bite function.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Clear Aligners</h3>
+                    <p>Discreet, removable trays for perfect teeth alignment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="card">
+                    <h3 class="text-lg font-semibold">Can medication completely relieve tooth pain?</h3>
+                    <p>Not entirely. While medications may offer short-term relief, long-lasting relief requires identifying and treating the root cause.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">Does teeth scaling cause enamel damage, sensitivity, or gaps between teeth?</h3>
+                    <p>No. Scaling safely removes plaque and tartar without damaging enamel or creating gaps.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">Can fluorosis stains be removed through scaling?</h3>
+                    <p>Scaling can remove surface stains but not fluorosis, which may require bleaching or veneers.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">Can painful teeth be treated with fillings?</h3>
+                    <p>Not always. If the cavity reaches the pulp, root canal treatment or extraction may be necessary.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">Is placing a cap or crown necessary after root canal treatment?</h3>
+                    <p>Yes. A crown protects the treated tooth, preventing fractures and adding durability.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">Can milk teeth need root canal treatment?</h3>
+                    <p>Yes, if a milk tooth has a deep cavity, an RCT can preserve it and prevent infection.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">How can I maintain good oral hygiene?</h3>
+                    <p>Brush twice daily, rinse after meals, floss regularly, and schedule routine check-ups.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">What is the best age to get braces?</h3>
+                    <p>Braces are most effective between ages 12 and 14, but earlier intervention may be needed.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">Do all wisdom teeth need to be removed?</h3>
+                    <p>No, only if they are impacted, infected, or causing pain or crowding.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">Is it important to replace missing teeth after extraction?</h3>
+                    <p>Yes, to maintain proper bite alignment and prevent adjacent teeth from shifting.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">What are the benefits of dental implants?</h3>
+                    <p>Implants restore appearance and functionality, improving confidence and quality of life.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">Which type of toothbrush and toothpaste should I use?</h3>
+                    <p>Use a soft or medium-bristled toothbrush and non-abrasive fluoride toothpaste.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">What causes tooth sensitivity?</h3>
+                    <p>Sensitivity can result from enamel wear, decay, exposed roots, or hairline cracks.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold">How often should I see a dentist?</h3>
+                    <p>Visit every six months for routine check-ups and professional cleaning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">We would love to hear from you</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-600">Name *</label>
+                            <input type="text" id="name" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-600">Email *</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-600">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-600">Your Message</label>
+                            <textarea id="message" class="form-input" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit</button>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Reach us</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            <p>B2/8, SBM Layout, Anthivadi, Hosur, Tamil Nadu 635109, India</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-blue-600"></i>
+                            <p>info@sakthidentalclinic.in</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-blue-600"></i>
+                            <p>+91 9862890897 / +91 9363298118</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-clock text-blue-600"></i>
+                            <p><strong>Sunday to Saturday:</strong> 9am to 8pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy -->
+    <section id="privacy" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Privacy Policy</h2>
+            <div class="prose max-w-none text-gray-600">
+                <p>At Sakthi Dental Clinic, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, store, and disclose information from visitors and users of our website.</p>
+                <h3>1. Information We Collect</h3>
+                <p>We may collect personal identification information from users in several ways, including when users:</p>
+                <ul class="list-disc list-inside">
+                    <li>Visit our website</li>
+                    <li>Fill out forms (e.g contact or appointment requests)</li>
+                    <li>Engage with features, services, or resources on our site</li>
+                </ul>
+                <p>Types of information we may collect include:</p>
+                <ul class="list-disc list-inside">
+                    <li>Name</li>
+                    <li>Email address</li>
+                    <li>Phone number</li>
+                </ul>
+                <p>Users can visit our site anonymously. We only collect personal data when it is voluntarily submitted by users.</p>
+                <h3>2. Cookies</h3>
+                <p>Our website may use “cookies” to enhance the user experience. Cookies are small files stored on a user’s device for record-keeping purposes and to track preferences or site activity.</p>
+                <h3>3. How We Use Your Information</h3>
+                <p>Collected information may be used for the following purposes:</p>
+                <ul class="list-disc list-inside">
+                    <li>To operate and manage the website</li>
+                    <li>To improve customer service</li>
+                    <li>To enhance the website experience</li>
+                    <li>To communicate via email</li>
+                </ul>
+                <h3>4. Data Security</h3>
+                <p>We implement appropriate security measures for data collection, storage
